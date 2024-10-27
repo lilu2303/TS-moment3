@@ -1,0 +1,37 @@
+<h1>Konvertering</h1>
+
+<div class="convert">
+    <h2> Meter &harr; Foot</h2>   
+<div>
+    <label for="convertlengthfrom">Skriv in värdet du vill konvertera: </label><br>
+    <input type="number" id="convertlengthfrom"[(ngModel)]="convertlengthfrom">
+</div>
+<div>
+    <button (click) = "meterToFoot()">Meter till Foot</button>
+</div>
+<div>
+    <button (click) = "footToMeter()">Foot till Meter</button>
+</div>
+<div id="resultlength">
+    <p>Resultat: </p>{{resultlength}}
+</div>
+</div>
+
+<br>
+
+<div class="convert">
+    <h2> Celcius &harr;  Fahrenheit</h2>   
+<div>
+    <label for="convertdegreesfrom">Skriv in värdet du vill konvertera: </label><br>
+    <input type="number" id="convertdegreesfrom"[(ngModel)]="convertdegreesfrom">
+</div>
+<div>
+    <button (click) = "celsiusToFahrenheit()">&deg;C till &deg;F</button>
+</div>
+<div>
+    <button (click) = "fahrenheitToCelcius()">&deg;F till &deg;C</button>
+</div>
+<div id="resultdegrees">
+    <p>Resultat: </p>{{resultdegrees}}
+</div>
+</div>
